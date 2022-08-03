@@ -2,7 +2,7 @@ const assert = require("assert");
 const anchor = require("@project-serum/anchor");
 const { SystemProgram } = anchor.web3;
 
-describe("basic-anchor", () => {
+describe("sample", () => {
   // Use a local provider.
   const provider = anchor.AnchorProvider.local();
 
@@ -15,7 +15,7 @@ describe("basic-anchor", () => {
     // #region code-simplified
     // The program to execute.
     const idl = JSON.parse(
-      require("fs").readFileSync("./target/idl/basic_anchor.json", "utf8")
+      require("fs").readFileSync("./target/idl/sample.json", "utf8")
     );
 
     //Address of the deployed program
@@ -56,7 +56,7 @@ describe("basic-anchor", () => {
 
     // The program to execute.
     const idl = JSON.parse(
-      require("fs").readFileSync("./target/idl/basic_anchor.json", "utf8")
+      require("fs").readFileSync("./target/idl/sample.json", "utf8")
     );
 
     //Address of the deployed program
@@ -88,7 +88,7 @@ describe("basic-anchor", () => {
 
     // The program to execute.
     const idl = JSON.parse(
-      require("fs").readFileSync("./target/idl/basic_anchor.json", "utf8")
+      require("fs").readFileSync("./target/idl/sample.json", "utf8")
     );
 
     //Address of the deployed program
@@ -120,7 +120,7 @@ describe("basic-anchor", () => {
 
     // The program to execute.
     const idl = JSON.parse(
-      require("fs").readFileSync("./target/idl/basic_anchor.json", "utf8")
+      require("fs").readFileSync("./target/idl/sample.json", "utf8")
     );
 
     //Address of the deployed program
