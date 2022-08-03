@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "basic_anchor",
+  "name": "sample",
   "instructions": [
     {
       "name": "initialize",
@@ -21,7 +21,8 @@
           "isSigner": false
         }
       ],
-      "args": []
+      "args": [],
+      "returns": null
     },
     {
       "name": "update",
@@ -37,7 +38,8 @@
           "name": "data",
           "type": "u64"
         }
-      ]
+      ],
+      "returns": null
     },
     {
       "name": "increment",
@@ -48,7 +50,8 @@
           "isSigner": false
         }
       ],
-      "args": []
+      "args": [],
+      "returns": null
     },
     {
       "name": "decrement",
@@ -59,7 +62,8 @@
           "isSigner": false
         }
       ],
-      "args": []
+      "args": [],
+      "returns": null
     }
   ],
   "accounts": [
@@ -77,6 +81,6 @@
     }
   ],
   "metadata": {
-    "address": "Bs9xd4xLng5Fzrh3ykjk8tYquZqbxmDNjmtMtnGcguh7"
+    "address": "8V4itDZLkJKyL1MNkb6cq3M9sZ4mAamsLj74uXFYJboY"
   }
 }
