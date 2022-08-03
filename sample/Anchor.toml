@@ -1,13 +1,13 @@
 [features]
 seeds = false
-[programs.localnet]
-sample = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+[programs.devnet]
+sample = "7RZ3zNg49LrzAtesYLTKPH9jUyTNCoQvD8u6pKar9Dgk"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "/root/.config/solana/id.json"
 
 [scripts]
