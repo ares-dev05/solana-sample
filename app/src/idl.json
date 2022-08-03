@@ -1,12 +1,12 @@
 {
   "version": "0.1.0",
-  "name": "sample",
+  "name": "basic_anchor",
   "instructions": [
     {
-      "name": "create",
+      "name": "initialize",
       "accounts": [
         {
-          "name": "baseAccount",
+          "name": "myAccount",
           "isMut": true,
           "isSigner": true
         },
@@ -21,47 +21,62 @@
           "isSigner": false
         }
       ],
-      "args": [],
-      "returns": null
+      "args": []
+    },
+    {
+      "name": "update",
+      "accounts": [
+        {
+          "name": "myAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "u64"
+        }
+      ]
     },
     {
       "name": "increment",
       "accounts": [
         {
-          "name": "baseAccount",
+          "name": "myAccount",
           "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
           "isSigner": false
         }
       ],
-      "args": [],
-      "returns": null
+      "args": []
+    },
+    {
+      "name": "decrement",
+      "accounts": [
+        {
+          "name": "myAccount",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [
     {
-      "name": "BaseAccount",
+      "name": "MyAccount",
       "type": {
         "kind": "struct",
         "fields": [
           {
-            "name": "count",
-            "type": "u8"
+            "name": "data",
+            "type": "u64"
           }
         ]
       }
     }
   ],
   "metadata": {
-    "address": "7RZ3zNg49LrzAtesYLTKPH9jUyTNCoQvD8u6pKar9Dgk"
+    "address": "Bs9xd4xLng5Fzrh3ykjk8tYquZqbxmDNjmtMtnGcguh7"
   }
 }
