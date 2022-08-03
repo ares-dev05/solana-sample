@@ -72,8 +72,8 @@ const Content: FC = () => {
         if (!wallet) {
             return null;
         }
-
-        const network = "http://127.0.0.1:8899";
+        const endpoint = clusterApiUrl(WalletAdapterNetwork.Devnet)
+        const network = endpoint;
         const connection = new Connection(network, "processed");
 
         const provider = new Provider(connection, wallet, {
